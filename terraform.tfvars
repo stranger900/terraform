@@ -1,0 +1,13 @@
+#cidr_block           = "10.0.0.0/16"
+public_subnet_cidrs  = ["10.0.1.0/24", "10.0.2.0/24"]
+private_subnet_cidrs = ["10.0.50.0/24", "10.0.51.0/24"]
+public_1_cidr_block  = "10.0.1.0/24"
+public_2_cidr_block  = "10.0.2.0/24"
+private_1_cidr_block = "10.0.10.0/24"
+private_2_cidr_block = "10.0.20.0/24"
+vpc_cidr_block       = "10.0.0.0/16"
+sg_cidr_blocks       = ["0.0.0.0/0"]
+sg_ports             = ["22", "80", "3306", "8080"]
+ami_type             = "AL2_x86_64"
+disk_size            = 10
+instance_types       = ["t2.small"]
