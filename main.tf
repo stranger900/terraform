@@ -1,13 +1,3 @@
-terraform {
-  required_version = ">=0.12"
-  backend "s3" {
-    bucket = "aws-bucket-demo3"
-    key    = "demo3.tfstate"
-    region = "us-east-1"
-  }
-
-}
-
 module "vpc" {
   source           = "./modules/vpc"
   vpc_cidr_block   = var.vpc_cidr_block
